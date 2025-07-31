@@ -1,0 +1,24 @@
+"""
+File: fine_tune_yolov8.py
+Description: Script for fine-tuning YOLOv8 on a custom dataset (from Kaggle).
+Task: Object Detection / Segmentation (Car) / Paking Management
+
+📌 Details:
+- Model: YOLOv8s / YOLOv8m / YOLOv8n (choose based on your case)
+- Framework: Ultralytics YOLOv8 (https://github.com/ultralytics/ultralytics)
+- Data format: YOLO format (images/ + labels/*.txt)
+- Config file: `data.yaml` containing train/val paths and class names
+- Augmentation: Enabled (mosaic, hsv, flip, etc. as per YOLO default)
+- Link data: https://www.kaggle.com/datasets/binhhhhhhhhh/parkingmanagement
+
+⚙️ Training Settings:
+- Epochs: 100
+- Batch size: 2
+- Image size: 1280x720
+- Optimizer: SGD / AdamW (default from Ultralytics)
+- Early stopping: Enabled
+- Device: GPU (Kaggle T4)
+
+📈 Results:
+- Output model: `runs/detect/train/weights/best.pt`
+
