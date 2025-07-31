@@ -11,6 +11,27 @@ An intelligent system that detects and counts vehicles entering or exiting a par
 
 ---
 
+## 📡 Live Demo
+<p align="center">
+  <img src="demo/UFPR04.gif" width="600" alt="UFPR04">
+  <br>
+  <em> 📍 UFPR04
+</p>
+
+<p align="center">
+  <img src="demo/UFPR05.gif" width="600" alt="UFPR05">
+  <br>
+  <em> 📍 UFPR05
+</p>
+
+---
+
+## 📦Data
+- The data is sourced from the UFPR Parking Lot Database by the Federal University of Paraná (Brazil), which includes multiple camera angles from various parking lots. Extracted frames were annotated using Roboflow, and the [Segment Anything Model (SAM) by Facebook](https://segment-anything.com/) was also utilized to accelerate and improve annotation accuracy, which was quickly leveraged through tools like [Ultralytics](https://docs.ultralytics.com/models/sam/)
+- Data source: https://web.inf.ufpr.br/vri/databases/parking-lot-database/
+
+---
+
 ## ⚙️ Setup Instructions
 ### Clone the Repository
 ```bash
